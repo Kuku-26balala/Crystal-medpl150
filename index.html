@@ -2,180 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Crystal Ma | MEDPL 150 Section 2</title>
+  <title>MEDPL 150 Section 2 - Crystal Ma</title>
   <style>
     body {
-      background: url("images/run.jpg") center/cover no-repeat;
-      font-family: "Helvetica Neue", Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      color: #222;
+      font-family: "Poppins", sans-serif;
+      background-image: url("images/run.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #333;
     }
 
     header {
-      background-color: rgba(255, 255, 255, 0.25);
       text-align: center;
-      padding: 35px 15px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 60px 20px 20px;
       color: white;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+      text-shadow: 1px 1px 3px black;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      font-size: 16px;
-      margin-top: 6px;
+    h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
     }
 
     main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 28px;
-      padding: 60px 45px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 40px;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.4);
-      border-radius: 14px;
-      padding: 14px 16px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-      transition: all 0.25s ease;
-      position: relative;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-      background: rgba(255, 255, 255, 0.5);
-    }
-
-    .card::before {
-      content: attr(data-icon);
-      font-size: 22px;
-      position: absolute;
-      top: 10px;
-      right: 14px;
-      opacity: 0.25;
-    }
-
-    .card h2 {
-      margin-top: 0;
-      font-size: 17px;
-      color: #111;
-      margin-bottom: 8px;
-    }
-
-    .card p, .card ul {
-      font-size: 14px;
-      line-height: 1.45;
-      color: #333;
-      margin: 0;
-    }
-
-    .card ul {
-      padding-left: 16px;
-    }
-
-    .card ul li {
-      margin-bottom: 4px;
-    }
-
-    a {
-      color: #005fc4;
+    .icon-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-decoration: none;
-      transition: color 0.2s;
+      color: black;
+      background: rgba(255, 255, 255, 0.55);
+      border-radius: 20px;
+      width: 120px;
+      padding: 15px;
+      transition: transform 0.3s ease, background 0.3s ease;
     }
 
-    a:hover {
-      color: #003f8a;
-      text-decoration: underline;
+    .icon-link:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.75);
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    section {
+      width: 85%;
+      max-width: 900px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.55);
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
     }
 
     footer {
+      background: rgba(255, 255, 255, 0.55);
+      padding: 25px;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 850px;
+      margin: 50px auto;
       text-align: center;
-      padding: 35px 20px;
-      font-size: 15px;
-      background-color: rgba(255, 255, 255, 0.25);
-      color: white;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+      font-size: 16px;
     }
 
-    footer p {
-      margin: 0 auto;
-      max-width: 600px;
-      line-height: 1.5;
-    }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Crystal Ma</h1>
-    <p>MEDPL 150 Section 2 | Digital Media Portfolio</p>
+    <p>Digital Memory Box</p>
   </header>
 
   <main>
-    <div class="card" data-icon="🌿">
-      <h2>About Me</h2>
- <p>
-      I've always been searching for a way to preserve those fleeting moments in daily life
-    —sunrises and sunsets, sudden rainbows, or a friend's offhand remark. 
-      For me, becoming a media creator is about keeping memories that many overlook, 
-    transforming them into works that can be revisited.
-</p>
+    <a href="Reflections.html" class="icon-link">
+      <div class="icon">📖</div>
+      <span>Reflections</span>
+    </a>
 
-    </div>
+    <a href="#homework2" class="icon-link">
+      <div class="icon">🖼️</div>
+      <span>Homework 2</span>
+    </a>
 
-    <div class="card" data-icon="📖">
-      <h2>Reading Reflections</h2>
-      <p><a href="Reflections.html">View reflections →</a></p>
-    </div>
+    <a href="#homework3" class="icon-link">
+      <div class="icon">🎞️</div>
+      <span>Homework 3</span>
+    </a>
 
-    <div class="card" data-icon="📝">
-      <h2>Homework #1</h2>
-    </div>
+    <a href="#photomontage" class="icon-link">
+      <div class="icon">🌸</div>
+      <span>Photomontage</span>
+    </a>
 
-    <div class="card" data-icon="🎨">
-      <h2>Homework #2</h2>
-      <ul>
-        <li><a href="Homework2-image1.html">Image 1</a></li>
-        <li><a href="Homework2-image2.html">Image 2</a></li>
-      </ul>
-    </div>
-
-    <div class="card" data-icon="📸">
-      <h2>Homework #3</h2>
-      <ul>
-        <li><a href="Homework3-part1-image1.html">Part 1 - Image 1</a></li>
-        <li><a href="Homework3-part1-image2.html">Part 1 - Image 2</a></li>
-        <li><a href="Homework3-part1-image3.html">Part 1 - Image 3</a></li>
-        <li><a href="Homework3-part2-image1.html">Part 2 - Image 1</a></li>
-        <li><a href="Homework3-part2-image2.html">Part 2 - Image 2</a></li>
-        <li><a href="Homework3-part2-image3.html">Part 2 - Image 3</a></li>
-        <li><a href="Homework3-part2-image4.html">Part 2 - Image 4</a></li>
-      </ul>
-    </div>
-
-    <div class="card" data-icon="🧩">
-      <h2>Photomontage</h2>
-      <ul>
-        <li><a href="Photomontage1.html">Photomontage #1</a></li>
-        <li><a href="Photomontage2.html">Photomontage #2</a></li>
-      </ul>
-    </div>
+    <a href="#about" class="icon-link">
+      <div class="icon">💬</div>
+      <span>About Me</span>
+    </a>
   </main>
+
+  <section id="homework2">
+    <h2>Homework #2</h2>
+    <ul>
+      <li><a href="Homework2-image1.html">Image 1</a></li>
+      <li><a href="Homework2-image2.html">Image 2</a></li>
+    </ul>
+  </section>
+
+  <section id="homework3">
+    <h2>Homework #3</h2>
+    <ul>
+      <li><a href="Homework3-part1-image1.html">Part 1 - Image 1</a></li>
+      <li><a href="Homework3-part1-image2.html">Part 1 - Image 2</a></li>
+      <li><a href="Homework3-part1-image3.html">Part 1 - Image 3</a></li>
+      <li><a href="Homework3-part2-image1.html">Part 2 - Image 1</a></li>
+      <li><a href="Homework3-part2-image2.html">Part 2 - Image 2</a></li>
+      <li><a href="Homework3-part2-image3.html">Part 2 - Image 3</a></li>
+      <li><a href="Homework3-part2-image4.html">Part 2 - Image 4</a></li>
+    </ul>
+  </section>
+
+  <section id="photomontage">
+    <h2>Photomontage</h2>
+    <ul>
+      <li><a href="Photomontage1.html">Photomontage #1</a></li>
+      <li><a href="Photomontage2.html">Photomontage #2</a></li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I've always been searching for a way to preserve those fleeting moments in daily life
+      —sunrises and sunsets, sudden rainbows, or a friend's offhand remark. 
+      For me, becoming a media creator is about keeping memories that many overlook, 
+      transforming them into works that can be revisited.
+    </p>
+  </section>
 
   <footer>
     <p>
       This is my “digital memory box.” 
-  My creative mediums include photographs and short videos, capturing moments from life. 
+      My creative mediums include photographs and short videos, capturing moments from life. 
       The tools I often use are CapCut, Procreate, and Photoshop. 
-  My goal is for viewers to resonate with these pieces or find their own fleeting memories while browsing through them.
+      My goal is for viewers to resonate with these pieces or find their own fleeting memories while browsing through them.
     </p>
   </footer>
 

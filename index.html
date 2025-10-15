@@ -13,98 +13,101 @@
     }
 
     header {
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.3);
       text-align: center;
-      padding: 50px 20px;
-      border-bottom: 1.5px solid #ddd;
-      backdrop-filter: blur(3px);
+      padding: 40px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(6px);
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     }
 
     header h1 {
       margin: 0;
-      font-size: 40px;
+      font-size: 38px;
       letter-spacing: 1px;
-      color: #333;
     }
 
     header p {
-      font-size: 18px;
+      font-size: 17px;
       margin-top: 8px;
-      color: #555;
     }
 
     main {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 25px;
-      padding: 50px;
-      background-color: rgba(255, 255, 255, 0.7);
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 35px;
+      padding: 60px 50px;
+      background: transparent;
     }
 
     .card {
-      background: white;
-      border-radius: 14px;
-      padding: 25px;
+      background: rgba(255, 255, 255, 0.35);
+      border-radius: 18px;
+      padding: 18px 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       transition: all 0.3s ease;
       position: relative;
-      overflow: hidden;
+      backdrop-filter: blur(10px);
     }
 
     .card:hover {
       transform: translateY(-6px);
       box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+      background: rgba(255, 255, 255, 0.45);
     }
 
     .card::before {
       content: attr(data-icon);
-      font-size: 28px;
+      font-size: 26px;
       position: absolute;
-      top: 15px;
-      right: 18px;
-      opacity: 0.3;
+      top: 12px;
+      right: 16px;
+      opacity: 0.25;
     }
 
     .card h2 {
       margin-top: 0;
-      font-size: 22px;
-      color: #2c3e50;
-      margin-bottom: 12px;
+      font-size: 19px;
+      color: #222;
+      margin-bottom: 10px;
     }
 
     .card p {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.5;
-      color: #444;
+      color: #333;
     }
 
     .card ul {
-      padding-left: 20px;
+      padding-left: 18px;
       margin: 0;
+      font-size: 15px;
     }
 
     .card ul li {
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     a {
-      color: #0077cc;
+      color: #005fc4;
       text-decoration: none;
       transition: color 0.2s;
     }
 
     a:hover {
-      color: #005fa3;
+      color: #003f8a;
       text-decoration: underline;
     }
 
     footer {
       text-align: center;
       padding: 40px 20px;
-      font-size: 17px;
-      background-color: rgba(255, 255, 255, 0.65);
-      color: #333;
-      border-top: 1px solid #ddd;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(6px);
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     }
 
     footer p {
@@ -124,7 +127,11 @@
   <main>
     <div class="card" data-icon="🌿">
       <h2>About Me</h2>
-      <p>I've always been searching for a way to preserve those fleeting moments in daily life—sunrises and sunsets, sudden rainbows, or a friend's offhand remark. Becoming a media creator is about keeping memories that many overlook, transforming them into works that can be revisited. My creative mediums include photographs and short videos, using tools like CapCut, Procreate, and social media.</p>
+    <p>
+      I've always been searching for a way to preserve those fleeting moments in daily life
+    —sunrises and sunsets, sudden rainbows, or a friend's offhand remark. 
+      For me, becoming a media creator is about keeping memories that many overlook, 
+    transforming them into works that can be revisited.</p>
     </div>
 
     <div class="card" data-icon="📖">
@@ -134,7 +141,7 @@
 
     <div class="card" data-icon="📝">
       <h2>Homework #1</h2>
-      <p>Details coming soon...</p>
+      <p>Coming soon...</p>
     </div>
 
     <div class="card" data-icon="🎨">
@@ -159,7 +166,7 @@
     </div>
 
     <div class="card" data-icon="🧩">
-      <h2>Homework #4 - Photomontage</h2>
+      <h2>Photomontage</h2>
       <ul>
         <li><a href="Photomontage1.html">Photomontage #1</a></li>
         <li><a href="Photomontage2.html">Photomontage #2</a></li>
@@ -168,12 +175,11 @@
   </main>
 
   <footer>
-    <p>I've always been searching for a way to preserve those fleeting moments in daily life—sunrises and sunsets, sudden rainbows, or a friend's offhand remark. 
-      For me, becoming a media creator is about keeping memories that many overlook, transforming them into works that can be revisited.
-    <br><br>
-    This is my “digital memory box.” 
-      My creative mediums include photographs and short videos, capturing moments from life. 
-      The tools I often use are CapCut, Procreate, and Photoshop. My goal is for viewers to resonate with these pieces or find their own fleeting memories while browsing through them.
+    <p>
+      This is my “digital memory box.” 
+  My creative mediums include photographs and short videos, capturing moments from life. 
+      The tools I often use are CapCut, Procreate, and Photoshop. 
+  My goal is for viewers to resonate with these pieces or find their own fleeting memories while browsing through them.
     </p>
   </footer>
 
